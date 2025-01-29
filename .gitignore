@@ -3,12 +3,17 @@
 
 # Log files
 *.log
+ecommerce.log
 
 # Target directory
 /target/
 /out/
-frontend
-ecommerce.log
+
+# Ignore frontend directory
+/frontend/
+
+# Ignore MongoDB-related folder
+/mongod/
 
 # IDE-specific files
 /.idea/
