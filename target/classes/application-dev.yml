@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: ecommerce
+      authentication-database: admin
+
+  redis:
+    host: localhost
+    port: 6379
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+  elasticsearch:
+    uris: http://localhost:9200
+
+logging:
+  level:
+    root: INFO
+    net.engineeringdigest.ecommerce: DEBUG
+    org.springframework.data.mongodb: DEBUG
+    org.springframework.cache: DEBUG
+    org.springframework.kafka: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
